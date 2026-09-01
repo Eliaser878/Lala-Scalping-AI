@@ -1,0 +1,162 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lala Scalping AI</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0b0f14;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        .logo {
+            font-size: 60px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin: 10px 0;
+        }
+
+        .subtitle {
+            color: #aeb7c2;
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: #151b23;
+            border-radius: 18px;
+            padding: 30px;
+            margin: 20px 0;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+        }
+
+        .status {
+            font-size: 20px;
+            margin: 15px 0;
+        }
+
+        .online {
+            color: #35d07f;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 28px;
+            border-radius: 10px;
+            background: #35d07f;
+            color: #07110b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            opacity: 0.85;
+        }
+
+        footer {
+            margin-top: 40px;
+            color: #697482;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="logo">🤖</div>
+
+        <h1>Lala Scalping AI</h1>
+
+        <p class="subtitle">
+            Automated MT5 Trading Assistant
+        </p>
+
+        <div class="card">
+            <h2>Bot Status</h2>
+
+           <div class="status online" id="botStatus">
+    ● OFFLINE
+</div>
+<p id="connectionStatus">
+    Connection: <strong>DISCONNECTED</strong>
+</p>
+
+<p id="lastUpdate">
+    Last Update: Waiting...
+</p>
+            <p>
+                Lala Scalping AI is designed to analyze the market
+                and assist with automated trading on MetaTrader 5.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Features</h2>
+
+            <p>📊 Market Analysis</p>
+            <p>🛡️ Stop Loss & Take Profit</p>
+            <p>⚙️ Automated Trade Management</p>
+            <p>📈 Risk Management</p>
+        </div>
+
+        <a class="button" href="#">
+            Lala Scalping AI
+       </a>
+
+        <footer>
+            Lala Scalping AI © 2026
+        </footer>
+
+    </div>
+
+<!-- LALA CONNECTION AREA -->
+<div class="card">
+    <h2>Bot Controls</h2>
+
+    <button class="button" onclick="startBot()">
+    START BOT
+</button>
+
+<button class="button" onclick="stopBot()">
+    STOP BOT
+</button>
+    <p id="message"></p>
+</div>
+<script>
+function startBot() {
+    document.getElementById("botStatus").innerHTML = "● ONLINE";
+    document.getElementById("connectionStatus").innerHTML =
+        "Connection: <strong>TEST MODE</strong>";
+    document.getElementById("lastUpdate").innerHTML =
+        "Last Update: Just now";
+}
+
+function stopBot() {
+    document.getElementById("botStatus").innerHTML = "● OFFLINE";
+    document.getElementById("connectionStatus").innerHTML =
+        "Connection: <strong>DISCONNECTED</strong>";
+    document.getElementById("lastUpdate").innerHTML =
+        "Last Update: Just now";
+}
+</script>
+</body>
+</html>
